@@ -87,7 +87,7 @@ function App() {
         Switch Background
       </button>
       <div className="z-10 flex flex-col items-center justify-center gap-4 w-full max-w-[95vw]">
-        <span className="text-5xl md:text-3xl text-white my-10">Hey There</span>
+        <span className="text-5xl md:text-7xl text-white my-10 animate-gradient-x bg-gradient-to-r from-gray-50 via-gray-700 to-gray-50 bg-clip-text" style={{backgroundSize: '200% 200%', animation: 'gradient-x 2.5s ease-in-out infinite'}}>Hey There</span>
        
         {!result && <InputComponent setResult={setResult} />}
        
@@ -109,7 +109,7 @@ function App() {
         )}
        
         {result && showEditors && (
-          <div className="flex items-stretch justify-center gap-6 flex-col md:flex-row w-full">
+          <div className="flex items-stretch justify-center gap-6 flex-col lg:flex-row max-w-10/12 container mx-auto">
             <TextEditor
               content={result.json.note}
               handleChange={setNote}
@@ -129,6 +129,13 @@ function App() {
           </div>
         )}
       </div>
+      <style>{`
+        @keyframes gradient-x {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+      `}</style>
     </div>
   );
 }
