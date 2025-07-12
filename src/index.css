@@ -1,1 +1,5 @@
-@import "tailwindcss"
+@import "tailwindcss";
+
+body, html, #root {
+  font-family: cursive, "Comic Sans MS", "Comic Sans", "Brush Script MT", sans-serif;
+}

@@ -113,7 +113,7 @@ export const InputComponent: React.FC<InputProps> = ({ setResult }) => {
       {/* Processing state */}
       {loading && (
         <span className="flex flex-col items-center justify-center mt-2">
-          <img src={tubeSpinner} alt="Processing..." className="w-14 h-14 animate-spin duration-300 infinite" />
+          <img src={tubeSpinner} alt="Processing..." className="w-14 h-14" />
           <span className="mt-2 text-lg font-semibold animate-gradient-x bg-gradient-to-r from-gray-50 via-gray-700 to-gray-50 bg-clip-text text-transparent" style={{backgroundSize: '200% 200%', animation: 'gradient-x 2.5s ease-in-out infinite'}}> {progressMsg || "Processing audio..."} </span>
         </span>
       )}
