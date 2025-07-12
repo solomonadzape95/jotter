@@ -87,7 +87,7 @@ function App() {
         Switch Background
       </button>
       <div className="z-10 flex flex-col items-center justify-center gap-4 w-full max-w-[95vw]">
-        <span className="text-5xl md:text-7xl text-white my-10 animate-gradient-x bg-gradient-to-r from-gray-50 via-gray-700 to-gray-50 bg-clip-text" style={{backgroundSize: '200% 200%', animation: 'gradient-x 2.5s ease-in-out infinite'}}>Hey There</span>
+        <span className="text-5xl md:text-7xl text-transparent my-10 animate-gradient-x bg-gradient-to-r from-gray-50 via-gray-400 to-gray-50 bg-clip-text" style={{backgroundSize: '500% 500%', animation: 'gradient-x 2.5s ease-in-out infinite'}}>Hey There</span>
        
         {!result && <InputComponent setResult={setResult} />}
        
