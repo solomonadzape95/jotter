@@ -73,9 +73,10 @@ function App() {
   };
 
   return (
+    
     <div
       style={{ backgroundImage: `url('${backgrounds[bgIndex]}')` }}
-      className="bg-cover bg-center min-h-screen w-screen flex items-center justify-center"
+      className="bg-cover bg-center min-h-screen w-screen flex flex-col items-center justify-center"
     >
       <div className="absolute inset-0 bg-black/50 w-full h-full" />
       
@@ -129,6 +130,16 @@ function App() {
           </div>
         )}
       </div>
+      <footer className=" w-full flex justify-center items-center z-50 self-end mt-auto mb-1">
+     <span className="text-white text-lg flex items-center gap-2 bg-black/40 px-4 py-2 rounded-full shadow-lg">
+       built with
+       <span className="relative flex h-5 w-5">
+         <svg className="absolute inset-0 h-5 w-5 text-red-500 animate-ping" fill="currentColor" viewBox="0 0 20 20"><path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" /></svg>
+         <svg className="relative h-5 w-5 text-red-500" fill="currentColor" viewBox="0 0 20 20"><path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" /></svg>
+       </span>
+       by <a href="https://github.com/solomonadzape95" className="cursor-pointer hover:underline" target="_blank" rel="">0xsolenoid</a>
+     </span>
+   </footer>
       <style>{`
         @keyframes gradient-x {
           0% { background-position: 0% 50%; }
@@ -137,6 +148,8 @@ function App() {
         }
       `}</style>
     </div>
+    
+   
   );
 }
 
