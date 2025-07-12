@@ -18,14 +18,14 @@ function App() {
   return (
     <div
       style={{ backgroundImage: `url('${bg}')` }}
-      className={`bg-cover bg-center h-screen w-screen flex items-center justify-center`}
+      className={`bg-cover bg-center min-h-screen w-screen flex items-center justify-center`}
     >
       <div className="absolute inset-0 bg-black/50 w-full h-full" />
       <div className="z-10 flex flex-col items-center justify-center gap-4">
         <span className="text-5xl md:text-3xl text-white my-10">Hey There</span>
         <InputComponent setResult={setResult} />
         {result && (
-          <div className="flex items-center justify-between w-screen">
+          <div className="flex items-center justify-center container gap-10 flex-col md:flex-row mx-auto max-w-6xl">
             <TextEditor
               content={JSON.stringify(result.json.note)}
               handleChange={setNote}

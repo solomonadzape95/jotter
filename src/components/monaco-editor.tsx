@@ -15,8 +15,8 @@ const TextEditor: React.FC<EditorProps> = ({
     <div>
       <button onClick={handleDownload}>Download File</button>
       <Editor
-        height="60vh"
-        width="50vw"
+        height="50vh"
+        width="45%"
         defaultLanguage="xml"
         options={{
           formatOnPaste: true,
