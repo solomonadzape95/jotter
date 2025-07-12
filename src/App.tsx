@@ -76,7 +76,7 @@ function App() {
     
     <div
       style={{ backgroundImage: `url('${backgrounds[bgIndex]}')` }}
-      className="bg-cover bg-center min-h-screen w-screen flex flex-col items-center justify-center"
+      className="bg-cover bg-center min-h-screen w-screen grid place-items-center relative"
     >
       <div className="absolute inset-0 bg-black/50 w-full h-full" />
       
