@@ -29,7 +29,7 @@ Generate educational content in JSON with two parts:
    <heading1>...</heading1> \n
    ... \n
    </note>
-   - Always add line breaks i.e \n to help with formatting in editor
+   - Format the XML with **actual line breaks** (not escaped \n). Do not use \\n or \n in the output — use real new lines.
    - Use simple, clear explanations suitable for middle school level.
 
 2. An "assessment" field containing XML of 5 questions and answer sets that matches the format below:
